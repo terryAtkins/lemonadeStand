@@ -94,7 +94,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="226" y="238" width="17" height="21"/>
+                                    <rect key="frame" x="226" y="238" width="23" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="802-zd-F5o">
@@ -190,6 +190,15 @@
                                     <rect key="frame" x="226" y="381" width="23" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e06-sn-90f">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="226" y="410" width="23" height="21"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7U8-4V-Un3">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="+">
@@ -268,15 +277,18 @@
                                     <action selector="startDayButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Woe-8u-TAZ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e06-sn-90f">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL9-tK-SgN">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="reset game">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="226" y="410" width="23" height="21"/>
+                                    <rect key="frame" x="141" y="618" width="77" height="21"/>
                                 </variation>
-                            </label>
+                                <connections>
+                                    <action selector="gameReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ii-U6-YzX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -299,6 +311,7 @@
                                 <exclude reference="SDP-Di-cTo"/>
                                 <exclude reference="lAd-OS-0SS"/>
                                 <exclude reference="efk-vL-48W"/>
+                                <exclude reference="e06-sn-90f"/>
                                 <exclude reference="7U8-4V-Un3"/>
                                 <exclude reference="GXA-t8-kOA"/>
                                 <exclude reference="iU9-Ka-Fqm"/>
@@ -306,7 +319,7 @@
                                 <exclude reference="Pr9-Az-Kby"/>
                                 <exclude reference="D8K-Zq-ulh"/>
                                 <exclude reference="MzD-eQ-rJc"/>
-                                <exclude reference="e06-sn-90f"/>
+                                <exclude reference="VL9-tK-SgN"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -329,6 +342,7 @@
                                 <include reference="SDP-Di-cTo"/>
                                 <include reference="lAd-OS-0SS"/>
                                 <include reference="efk-vL-48W"/>
+                                <include reference="e06-sn-90f"/>
                                 <include reference="7U8-4V-Un3"/>
                                 <include reference="GXA-t8-kOA"/>
                                 <include reference="iU9-Ka-Fqm"/>
@@ -336,7 +350,7 @@
                                 <include reference="Pr9-Az-Kby"/>
                                 <include reference="D8K-Zq-ulh"/>
                                 <include reference="MzD-eQ-rJc"/>
-                                <include reference="e06-sn-90f"/>
+                                <include reference="VL9-tK-SgN"/>
                             </mask>
                         </variation>
                     </view>
