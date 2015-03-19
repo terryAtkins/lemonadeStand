@@ -92,7 +92,41 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startDayButton(sender: AnyObject) {
-    
+        // our ratio mix
+        var leftSide = Double(mixLemonCount)
+        var rightSide = Double(mixIceCount)
+        var ratio:Double =  leftSide / rightSide
+        println(" our ration is \(ratio)")
+        
+        // customers and their preference
+        var randomCusomters = arc4random_uniform(UInt32(10)) + 1
+        println("number of customers are \(randomCusomters)")
+        
+        let counter = Int(randomCusomters) - 1
+        var customerPreference: [Double] = []
+        
+        for var i = 0; i <= counter; i++ {
+            customerPreference.append(Double(arc4random_uniform(UInt32(11))) / 10)
+            println(customerPreference)
+        }
+        
+        for customer in customerPreference {
+            if customer < 0.4 && ratio > 1 {
+                money += 1
+                println("paid likes 1+")
+            }
+            else if customer < 0.6 && ratio == 1 {
+                money += 1
+                println("paid likes it equal")
+            }
+            else if customer < 0.1 && ratio < 1 {
+                money += 1
+                println("paid likes it weak")
+            }
+            else {
+                println("No payment")
+            }
+        }
     }
     
     override func viewDidLoad() {
