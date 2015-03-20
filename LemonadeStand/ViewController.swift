@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     var iceCubes:Int = 0
     var mixLemonCount:Int = 0
     var mixIceCount:Int = 0
+    var counter:Int = 0 // number of customers
+    var customersPaided:Int = 0
     
     // >>>>>>>> Labels <<<<<<<<<
     @IBOutlet weak var inventoryMoneyLabel: UILabel!
@@ -26,16 +28,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var purchaseIceCountLabel: UILabel!
     @IBOutlet weak var mixLemonsAvailabilityLabel: UILabel!
     @IBOutlet weak var mixIceAvailabilityLabel: UILabel!
+    @IBOutlet weak var showsCustomersVisited: UILabel!
+    @IBOutlet weak var numberOfCustomersTodayLabel: UILabel!
+    @IBOutlet weak var ShowImageLabel: UIImageView!
+    
     
     
     // >>>>>>>> Buttons <<<<<<<<<
     @IBAction func gameReset(sender: AnyObject) {
         
         money = 10
+        customersPaided = 0
         lemons = 0
         iceCubes = 0
         mixLemonCount = 0
         mixIceCount = 0
+        showsCustomersVisited.hidden = true
+        numberOfCustomersTodayLabel.hidden = true
+        ShowImageLabel.hidden = true
         updateUI()
     }
     
@@ -145,42 +155,84 @@ class ViewController: UIViewController {
             var randomCusomters = arc4random_uniform(UInt32(10)) + 1
             println("number of customers are \(randomCusomters)")
             
-            let counter = Int(randomCusomters) - 1
+            counter = Int(randomCusomters)
             var customerPreference: [Double] = []
             
-            for var i = 0; i <= counter; i++ {
+            // make visiable
+            showsCustomersVisited.hidden = false
+            numberOfCustomersTodayLabel.hidden = false
+            ShowImageLabel.hidden = false
+            
+            let getRandomImage = randomImages()
+            let showRandomImage = getRandomImage.randomImage()
+            ShowImageLabel.image = UIImage(named: showRandomImage)
+            
+            
+            
+            switch showRandomImage {
+            case "cold":
+                counter += 1
+                println("case cold")
+            case "mild":
+                counter += 1
+                println("case mild")
+            case "warm":
+                counter += 4
+                println("case warm")
+            default:
+                counter += 0
+                println("case 0")
+                
+            }
+            
+            showsCustomersVisited.text = "Customers \(counter)"
+            
+            for var i = 0; i <= counter - 1; i++ {
                 customerPreference.append(Double(arc4random_uniform(UInt32(11))) / 10)
                 println(customerPreference)
             }
             
             for customer in customerPreference {
-                if customer < 0.4 && ratio > 1 {
+                if customer < 0.4 && ratio >= 1 {
                     money += 1
-                    println("paid likes ratio 1+,  customer likes it /(customerPreference)")
+                    customersPaided += 1
+                    println("paid likes ratio 1+,  customer likes it srong")
                 }
-                else if customer < 0.6 && ratio == 1 {
+                else if customer > 0.6 && ratio < 1 {
                     money += 1
-                    println("paid likes it ratio is equal, customer likes it /(customerPreference)")
+                    customersPaided += 1
+                    println("paid likes it ratio is equal, customer likes it equal")
                 }
-                else if customer < 0.1 && ratio < 1 {
+                else if customer <= 0.6 && ratio < 1 {
                     money += 1
-                    println("paid likes it ratio weak, customer likes it /(customerPreference)")
+                    customersPaided += 1
+                    println("paid likes it ratio weak, customer likes it weak")
                 }
                 else {
                     println("No payment")
                 }
             }
             
+            numberOfCustomersTodayLabel.text = "Sold \(customersPaided)"
+            
             
             // reset mix count before calling updateUI
             mixLemonCount = 0
             mixIceCount = 0
             
+            // update
             updateUI()
+            customersPaided = 0
+
+            
+            
+
             
         } else  {
             showAlertWithText(message: "Mix your lemnoade first")
         }
+        
+        
     }
     
     override func viewDidLoad() {
@@ -210,6 +262,9 @@ class ViewController: UIViewController {
         
         mixIceAvailabilityLabel.text = "\(mixIceCount)"
         mixLemonsAvailabilityLabel.text = "\(mixLemonCount)"
+        
+
+
     }
     
     

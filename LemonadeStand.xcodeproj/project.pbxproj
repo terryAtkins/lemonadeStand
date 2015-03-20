@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2304071ABBFD2900FBA524 /* cold.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2303FE1ABBFD2900FBA524 /* cold.png */; };
+		DE2304081ABBFD2900FBA524 /* Cold@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2303FF1ABBFD2900FBA524 /* Cold@2x.png */; };
+		DE2304091ABBFD2900FBA524 /* Cold@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2304001ABBFD2900FBA524 /* Cold@3x.png */; };
+		DE23040A1ABBFD2900FBA524 /* mild.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2304011ABBFD2900FBA524 /* mild.png */; };
+		DE23040B1ABBFD2900FBA524 /* Mild@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2304021ABBFD2900FBA524 /* Mild@2x.png */; };
+		DE23040C1ABBFD2900FBA524 /* Mild@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2304031ABBFD2900FBA524 /* Mild@3x.png */; };
+		DE23040D1ABBFD2900FBA524 /* warm.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2304041ABBFD2900FBA524 /* warm.png */; };
+		DE23040E1ABBFD2900FBA524 /* Warm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2304051ABBFD2900FBA524 /* Warm@2x.png */; };
+		DE23040F1ABBFD2900FBA524 /* Warm@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DE2304061ABBFD2900FBA524 /* Warm@3x.png */; };
+		DE2304111ABC089F00FBA524 /* randomImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2304101ABC089F00FBA524 /* randomImages.swift */; };
 		DE8D2E1C1ABADBBD00ACAED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D2E1B1ABADBBD00ACAED8 /* AppDelegate.swift */; };
 		DE8D2E1E1ABADBBD00ACAED8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8D2E1D1ABADBBD00ACAED8 /* ViewController.swift */; };
 		DE8D2E211ABADBBD00ACAED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8D2E1F1ABADBBD00ACAED8 /* Main.storyboard */; };
@@ -26,6 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE2303FE1ABBFD2900FBA524 /* cold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cold.png; sourceTree = "<group>"; };
+		DE2303FF1ABBFD2900FBA524 /* Cold@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cold@2x.png"; sourceTree = "<group>"; };
+		DE2304001ABBFD2900FBA524 /* Cold@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Cold@3x.png"; sourceTree = "<group>"; };
+		DE2304011ABBFD2900FBA524 /* mild.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mild.png; sourceTree = "<group>"; };
+		DE2304021ABBFD2900FBA524 /* Mild@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mild@2x.png"; sourceTree = "<group>"; };
+		DE2304031ABBFD2900FBA524 /* Mild@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mild@3x.png"; sourceTree = "<group>"; };
+		DE2304041ABBFD2900FBA524 /* warm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warm.png; sourceTree = "<group>"; };
+		DE2304051ABBFD2900FBA524 /* Warm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warm@2x.png"; sourceTree = "<group>"; };
+		DE2304061ABBFD2900FBA524 /* Warm@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Warm@3x.png"; sourceTree = "<group>"; };
+		DE2304101ABC089F00FBA524 /* randomImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomImages.swift; sourceTree = "<group>"; };
 		DE8D2E161ABADBBD00ACAED8 /* LemonadeStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8D2E1A1ABADBBD00ACAED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE8D2E1B1ABADBBD00ACAED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +100,17 @@
 				DE8D2E1B1ABADBBD00ACAED8 /* AppDelegate.swift */,
 				DE8D2E1D1ABADBBD00ACAED8 /* ViewController.swift */,
 				DE8D2E1F1ABADBBD00ACAED8 /* Main.storyboard */,
+				DE2304101ABC089F00FBA524 /* randomImages.swift */,
 				DE8D2E221ABADBBD00ACAED8 /* Images.xcassets */,
+				DE2303FE1ABBFD2900FBA524 /* cold.png */,
+				DE2303FF1ABBFD2900FBA524 /* Cold@2x.png */,
+				DE2304001ABBFD2900FBA524 /* Cold@3x.png */,
+				DE2304011ABBFD2900FBA524 /* mild.png */,
+				DE2304021ABBFD2900FBA524 /* Mild@2x.png */,
+				DE2304031ABBFD2900FBA524 /* Mild@3x.png */,
+				DE2304041ABBFD2900FBA524 /* warm.png */,
+				DE2304051ABBFD2900FBA524 /* Warm@2x.png */,
+				DE2304061ABBFD2900FBA524 /* Warm@3x.png */,
 				DE8D2E241ABADBBD00ACAED8 /* LaunchScreen.xib */,
 				DE8D2E191ABADBBD00ACAED8 /* Supporting Files */,
 			);
@@ -193,8 +223,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8D2E211ABADBBD00ACAED8 /* Main.storyboard in Resources */,
+				DE23040C1ABBFD2900FBA524 /* Mild@3x.png in Resources */,
+				DE2304081ABBFD2900FBA524 /* Cold@2x.png in Resources */,
+				DE23040A1ABBFD2900FBA524 /* mild.png in Resources */,
+				DE23040F1ABBFD2900FBA524 /* Warm@3x.png in Resources */,
+				DE23040E1ABBFD2900FBA524 /* Warm@2x.png in Resources */,
+				DE2304071ABBFD2900FBA524 /* cold.png in Resources */,
 				DE8D2E261ABADBBD00ACAED8 /* LaunchScreen.xib in Resources */,
+				DE23040D1ABBFD2900FBA524 /* warm.png in Resources */,
 				DE8D2E231ABADBBD00ACAED8 /* Images.xcassets in Resources */,
+				DE23040B1ABBFD2900FBA524 /* Mild@2x.png in Resources */,
+				DE2304091ABBFD2900FBA524 /* Cold@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8D2E1E1ABADBBD00ACAED8 /* ViewController.swift in Sources */,
+				DE2304111ABC089F00FBA524 /* randomImages.swift in Sources */,
 				DE8D2E1C1ABADBBD00ACAED8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +447,7 @@
 				DE8D2E371ABADBBD00ACAED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE8D2E381ABADBBD00ACAED8 /* Build configuration list for PBXNativeTarget "LemonadeStandTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +456,7 @@
 				DE8D2E3A1ABADBBD00ACAED8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
